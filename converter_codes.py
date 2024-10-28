@@ -202,9 +202,9 @@ class Converter(QMainWindow):
             
             file_bbs[key] = all_points
         
-        for itr in data:
-            file_name_json = data[itr]["filename"]
-            sub_count = 0               # Contains count of masks for a single ground truth image
+            for itr in data:
+                file_name_json = data[itr]["filename"]
+                sub_count = 0               # Contains count of masks for a single ground truth image
             
             if len(data[itr]["regions"]) > 1:
                 for _ in range(len(data[itr]["regions"])):
